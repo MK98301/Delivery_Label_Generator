@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <header>
+    <div class="logo">Ipex Logistics - Staff Login</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Logout</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="login-page">
+    <form class="login-form">
+      <h2>Staff Login</h2>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" id="login">Login</button>
+
+      <p class="login-note">Access is restricted to registered staff only.</p>
+    </form>
+  </section>
+  
+  <script src="../routes/login.js"></script> <!--js file for the backend functioning-->
+</body>
+</html>

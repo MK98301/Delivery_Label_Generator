@@ -1,0 +1,116 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #78B3CE;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #bbdefb;
+}
+
+/* Login Page Section */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  background-color: #eaf6fa;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #05769c;
+}
+
+.login-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  padding: 0.75rem;
+  background-color: #F96E2A;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #fb8c00;
+}
+
+.login-note {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction:column;
+    gap: 0.75rem;
+  }
+}
